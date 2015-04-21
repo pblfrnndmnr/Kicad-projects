@@ -1,4 +1,4 @@
-update=20/04/2015 03:10:10 p.m.
+update=21/04/2015 01:10:02 a.m.
 version=1
 last_client=kicad
 [cvpcb]
@@ -60,4 +60,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=D:/Fernando/Kikad Projects/Libreria-Kicad-Fernando/Libreria_Fernando/Kicad-Libreria-Fernando
+LibName31=D:/Fernando/Kicad Projects/Libreria-Kicad-Fernando/Libreria_Fernando/Kicad-Libreria-Fernando
