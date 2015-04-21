@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TL2575
+D 1-A SIMPLE STEP-DOWN SWITCHING VOLTAGE REGULATORS -Housings_DIP:DIP-16__300_ELL
+K 1-A SIMPLE STEP-DOWN SWITCHING VOLTAGE REGULATORS
+F http://www.ti.com/lit/gpn/tl2575-05
+$ENDCMP
+#
+$CMP TL494
+D TL494, Pulse-Width-Modulation Control Circuits, Housings_DIP:DIP-16__300_ELL
+K TL494 Pulse-Width-Modulation Control Circuits
+F www.ti.com/lit/ds/symlink/tl494.pdf
+$ENDCMP
+#
+#End Doc Library

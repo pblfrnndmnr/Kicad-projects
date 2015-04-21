@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Kicad-Libreria-Fernando
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Fuente DC-DC reductora TL2575Adj"
+Date "mié 01 abr 2015"
+Rev "0"
+Comp "PFM"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TL2575 U1
+U 1 1 551AE710
+P 4200 3650
+F 0 "U1" H 3900 4430 60  0000 C CNN
+F 1 "TL2575" H 4400 4420 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16__300_ELL" H 6000 2400 60  0001 C CNN
+F 3 "" H 6000 2400 60  0000 C CNN
+	1    4200 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 551AE766
+P 5550 4050
+F 0 "D1" H 5550 4150 50  0000 C CNN
+F 1 "D_Schottky" H 5550 3950 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10" H 5550 4050 60  0001 C CNN
+F 3 "" H 5550 4050 60  0000 C CNN
+	1    5550 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 551AE8A6
+P 6300 3400
+F 0 "L1" V 6250 3400 50  0000 C CNN
+F 1 "220uH" V 6400 3400 50  0000 C CNN
+F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_horizontal_Diameter14mm_Amidon-T50" H 6300 3400 60  0001 C CNN
+F 3 "" H 6300 3400 60  0000 C CNN
+	1    6300 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 551AEB3C
+P 3300 3800
+F 0 "#PWR01" H 3300 3550 50  0001 C CNN
+F 1 "GND" H 3300 3650 50  0000 C CNN
+F 2 "" H 3300 3800 60  0000 C CNN
+F 3 "" H 3300 3800 60  0000 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 551AEB78
+P 7400 4500
+F 0 "#PWR02" H 7400 4250 50  0001 C CNN
+F 1 "GND" H 7400 4350 50  0000 C CNN
+F 2 "" H 7400 4500 60  0000 C CNN
+F 3 "" H 7400 4500 60  0000 C CNN
+	1    7400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 551AEB91
+P 6200 4500
+F 0 "#PWR03" H 6200 4250 50  0001 C CNN
+F 1 "GND" H 6200 4350 50  0000 C CNN
+F 2 "" H 6200 4500 60  0000 C CNN
+F 3 "" H 6200 4500 60  0000 C CNN
+	1    6200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3550 3600 3550
+Wire Wire Line
+	3300 3550 3300 3800
+Wire Wire Line
+	4800 3400 6000 3400
+Wire Wire Line
+	5550 3400 5550 3900
+Connection ~ 5550 3400
+Wire Wire Line
+	5550 4200 5550 4500
+$Comp
+L CP C3
+U 1 1 551AED38
+P 7000 3850
+F 0 "C3" H 7025 3950 50  0000 L CNN
+F 1 "100uF" H 7025 3750 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 7038 3700 30  0001 C CNN
+F 3 "" H 7000 3850 60  0000 C CNN
+	1    7000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 551AED83
+P 2700 3450
+F 0 "C1" H 2725 3550 50  0000 L CNN
+F 1 "3300uF" H 2725 3350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 2738 3300 30  0001 C CNN
+F 3 "" H 2700 3450 60  0000 C CNN
+	1    2700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 551AEDA3
+P 7400 3850
+F 0 "C4" H 7425 3950 50  0000 L CNN
+F 1 "100nF" H 7425 3750 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 7438 3700 30  0001 C CNN
+F 3 "" H 7400 3850 60  0000 C CNN
+	1    7400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 551AEDE2
+P 3000 3450
+F 0 "C2" H 3025 3550 50  0000 L CNN
+F 1 "100nF" H 3025 3350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 3038 3300 30  0001 C CNN
+F 3 "" H 3000 3450 60  0000 C CNN
+	1    3000 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 4500
+Wire Wire Line
+	7000 4500 7000 4000
+Wire Wire Line
+	7400 4500 7400 4000
+Wire Wire Line
+	7000 3700 7000 3400
+Wire Wire Line
+	6600 3400 8800 3400
+Wire Wire Line
+	7400 3400 7400 3700
+Connection ~ 7000 3400
+$Comp
+L GND #PWR04
+U 1 1 551AF0AF
+P 3450 4400
+F 0 "#PWR04" H 3450 4150 50  0001 C CNN
+F 1 "GND" H 3450 4250 50  0000 C CNN
+F 2 "" H 3450 4400 60  0000 C CNN
+F 3 "" H 3450 4400 60  0000 C CNN
+	1    3450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4400 3450 4150
+Wire Wire Line
+	3450 4150 3600 4150
+Wire Wire Line
+	3000 3100 3000 3300
+Connection ~ 3000 3100
+Wire Wire Line
+	2700 3600 2700 3700
+Connection ~ 3300 3700
+Connection ~ 3000 3700
+$Comp
+L CONN_01X02 Vout1
+U 1 1 551AF1CE
+P 9000 3450
+F 0 "Vout1" H 9000 3600 50  0000 C CNN
+F 1 "CONN_01X02" V 9100 3450 50  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads" H 9000 3450 60  0001 C CNN
+F 3 "" H 9000 3450 60  0000 C CNN
+	1    9000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 Vin1
+U 1 1 551AF1FF
+P 1850 3400
+F 0 "Vin1" H 1800 3600 50  0000 C CNN
+F 1 "CONN_01X02" V 1950 3400 50  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads" H 1850 3400 60  0001 C CNN
+F 3 "" H 1850 3400 60  0000 C CNN
+	1    1850 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3300 2700 3100
+Connection ~ 2700 3100
+Connection ~ 2700 3700
+Connection ~ 7400 3400
+Wire Wire Line
+	8800 4500 8800 3500
+Connection ~ 7400 4500
+$Comp
+L POT RV1
+U 1 1 551AF60F
+P 8300 3950
+F 0 "RV1" H 8300 3850 50  0000 C CNN
+F 1 "POT" H 8300 3950 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Bourns_3296W_3-8Zoll_Inline_ScrewUp" H 8300 3950 60  0001 C CNN
+F 3 "" H 8300 3950 60  0000 C CNN
+	1    8300 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 551AF772
+P 8300 3550
+F 0 "R1" V 8380 3550 50  0000 C CNN
+F 1 "R" V 8300 3550 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8230 3550 30  0001 C CNN
+F 3 "" H 8300 3550 30  0000 C CNN
+	1    8300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 551AF7F2
+P 8300 4350
+F 0 "R2" V 8380 4350 50  0000 C CNN
+F 1 "R" V 8300 4350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8230 4350 30  0001 C CNN
+F 3 "" H 8300 4350 30  0000 C CNN
+	1    8300 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3950 7800 3950
+Wire Wire Line
+	7800 3950 7800 4800
+Wire Wire Line
+	7800 4800 4800 4800
+Wire Wire Line
+	4800 4800 4800 4000
+Connection ~ 8300 3400
+Connection ~ 8300 4500
+Connection ~ 5550 4500
+Wire Wire Line
+	5100 4500 8800 4500
+Wire Wire Line
+	3000 3700 3000 3600
+Wire Wire Line
+	4800 3700 5100 3700
+Wire Wire Line
+	5100 3700 5100 4500
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 551AFDAA
+P 9650 4600
+F 0 "#FLG05" H 9650 4695 50  0001 C CNN
+F 1 "PWR_FLAG" H 9650 4780 50  0000 C CNN
+F 2 "" H 9650 4600 60  0000 C CNN
+F 3 "" H 9650 4600 60  0000 C CNN
+	1    9650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 551AFF7E
+P 9650 4700
+F 0 "#PWR06" H 9650 4450 50  0001 C CNN
+F 1 "GND" H 9650 4550 50  0000 C CNN
+F 2 "" H 9650 4700 60  0000 C CNN
+F 3 "" H 9650 4700 60  0000 C CNN
+	1    9650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4700 9650 4600
+Wire Wire Line
+	2250 3700 3600 3700
+Wire Wire Line
+	2250 3100 3600 3100
+Wire Wire Line
+	2250 3100 2250 3350
+Wire Wire Line
+	2250 3450 2250 3700
+Wire Wire Line
+	2250 3350 2050 3350
+Wire Wire Line
+	2050 3450 2250 3450
+$EndSCHEMATC
