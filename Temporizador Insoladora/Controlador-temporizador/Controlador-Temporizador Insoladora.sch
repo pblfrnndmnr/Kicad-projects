@@ -601,8 +601,6 @@ Wire Wire Line
 	6750 4600 6450 4600
 Wire Wire Line
 	6150 4600 5750 4600
-Wire Wire Line
-	3500 3450 3950 3450
 $Comp
 L GND #PWR020
 U 1 1 552ABE02
@@ -1473,13 +1471,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 10050 3300 10050
 Wire Wire Line
-	3850 3550 3950 3550
-Wire Wire Line
-	3500 3650 3950 3650
-Wire Wire Line
-	3150 3750 3950 3750
-Wire Wire Line
-	6200 3750 5650 3750
+	3400 3550 3950 3550
 $Comp
 L BC548 Q4
 U 1 1 552BD492
@@ -1712,13 +1704,13 @@ Text Label 4200 4300 0    60   ~ 0
 BUS-PIC
 Text GLabel 3000 10050 0    60   Input ~ 0
 MIND
-Text GLabel 3850 3550 0    60   Input ~ 0
+Text GLabel 3800 3450 0    60   Input ~ 0
 SEGU
-Text GLabel 3500 3650 0    60   Input ~ 0
+Text GLabel 3400 3550 0    60   Input ~ 0
 SEGD
-Text GLabel 3150 3750 0    60   Input ~ 0
+Text GLabel 3050 3650 0    60   Input ~ 0
 MINU
-Text GLabel 6200 3750 2    60   Input ~ 0
+Text GLabel 3350 3750 0    60   Input ~ 0
 MIND
 Text GLabel 5450 10050 0    60   Input ~ 0
 MINU
@@ -1778,7 +1770,7 @@ Text GLabel 5750 2350 2    60   Input ~ 0
 BAJAR
 Text GLabel 5750 4600 0    60   Input ~ 0
 SALIDAOPTO
-Text GLabel 3500 3450 0    60   Input ~ 0
+Text GLabel 6250 3750 2    60   Input ~ 0
 SALIDAOPTO
 Text GLabel 3350 1900 1    60   Input ~ 0
 ~MCLR~/VPP
@@ -1913,4 +1905,12 @@ Entry Wire Line
 	3600 8650 3700 8550
 Text Label 6250 9450 1    60   ~ 0
 BUS-ANODOS
+Wire Wire Line
+	6250 3750 5650 3750
+Wire Wire Line
+	3050 3650 3950 3650
+Wire Wire Line
+	3800 3450 3950 3450
+Wire Wire Line
+	3350 3750 3950 3750
 $EndSCHEMATC
