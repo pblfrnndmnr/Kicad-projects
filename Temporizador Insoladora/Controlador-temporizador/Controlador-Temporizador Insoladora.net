@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "D:\\Fernando\\Kicad Projects\\Temporizador Insoladora\\Controlador-temporizador\\Controlador-Temporizador Insoladora.sch")
-    (date "23/04/2015 21:35:57")
+    (source "D:/Fernando/Kicad Projects/Temporizador Insoladora/Controlador-temporizador/Controlador-Temporizador Insoladora.sch")
+    (date "24/04/2015 12:25:44")
     (tool "Eeschema (after 2015-mar-04 BZR unknown)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -65,7 +65,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 552A993E))
     (comp (ref P2)
-      (value CONN_01X03)
+      (value VAC12V)
       (footprint Connect:bornier3)
       (libsource (lib conn) (part CONN_01X03))
       (sheetpath (names /) (tstamps /))
