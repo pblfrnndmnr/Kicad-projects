@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 22/04/2015 19:33:01
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 30/04/2015 01:53:42 p.m.
 
 BeginCmp
 TimeStamp = /552A98C3;
@@ -150,7 +150,7 @@ EndCmp
 BeginCmp
 TimeStamp = /552A9D55;
 Reference = P2;
-ValeurCmp = CONN_01X03;
+ValeurCmp = VAC12V;
 IdModule  = Connect:bornier3;
 EndCmp
 
