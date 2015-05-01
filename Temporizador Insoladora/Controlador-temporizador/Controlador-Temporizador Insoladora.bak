@@ -173,12 +173,12 @@ $EndComp
 $Comp
 L VCC #PWR06
 U 1 1 552A974E
-P 6200 2800
-F 0 "#PWR06" H 6200 2650 50  0001 C CNN
-F 1 "VCC" H 6200 2950 50  0000 C CNN
-F 2 "" H 6200 2800 60  0000 C CNN
-F 3 "" H 6200 2800 60  0000 C CNN
-	1    6200 2800
+P 6400 2850
+F 0 "#PWR06" H 6400 2700 50  0001 C CNN
+F 1 "VCC" H 6400 3000 50  0000 C CNN
+F 2 "" H 6400 2850 60  0000 C CNN
+F 3 "" H 6400 2850 60  0000 C CNN
+	1    6400 2850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -535,9 +535,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 2150 5650 2150
 Wire Wire Line
-	6200 2800 6200 2850
-Wire Wire Line
-	6200 2850 5650 2850
+	5650 2850 6400 2850
 Wire Wire Line
 	6200 3000 6200 2950
 Wire Wire Line
@@ -594,7 +592,7 @@ Wire Wire Line
 	2850 6900 2850 7000
 Connection ~ 5500 6250
 Wire Wire Line
-	5800 2750 5650 2750
+	6050 2750 5650 2750
 Wire Wire Line
 	5800 6250 5500 6250
 Wire Wire Line
@@ -1070,14 +1068,10 @@ $EndComp
 Connection ~ 6900 5800
 Text GLabel 7050 5800 2    60   Input ~ 0
 SUBIR
-Text GLabel 6350 2250 2    60   Input ~ 0
+Text GLabel 6100 2350 2    60   Input ~ 0
 SUBIR
 Wire Wire Line
-	6350 2250 5650 2250
-Wire Wire Line
-	5750 2350 5650 2350
-Wire Wire Line
-	5650 2450 6100 2450
+	5650 2350 6100 2350
 $Comp
 L Crystal_Small Y1
 U 1 1 552B4521
@@ -1197,8 +1191,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 5800 9300 5800
 Connection ~ 9100 5800
-Wire Wire Line
-	5750 2550 5650 2550
 Wire Wire Line
 	12800 2400 12800 2150
 Wire Wire Line
@@ -1582,7 +1574,6 @@ NoConn ~ 3950 2650
 NoConn ~ 3950 2750
 NoConn ~ 3950 2850
 NoConn ~ 3950 2950
-NoConn ~ 5650 2650
 $Comp
 L PWR_FLAG #FLG034
 U 1 1 552B274E
@@ -1718,7 +1709,6 @@ NoConn ~ 3950 2650
 NoConn ~ 3950 2750
 NoConn ~ 3950 2850
 NoConn ~ 3950 2950
-NoConn ~ 5650 2650
 Wire Wire Line
 	6900 5350 10050 5350
 Wire Wire Line
@@ -1753,9 +1743,9 @@ F 3 "" H 10550 10450 60  0000 C CNN
 $EndComp
 Text GLabel 7900 10050 0    60   Input ~ 0
 SEGD
-Text GLabel 6100 2450 2    60   Input ~ 0
+Text GLabel 6100 2550 2    60   Input ~ 0
 INICIAR/PARAR
-Text GLabel 5750 2350 2    60   Input ~ 0
+Text GLabel 5750 2450 2    60   Input ~ 0
 BAJAR
 Text GLabel 5750 4600 0    60   Input ~ 0
 SALIDAOPTO
@@ -1779,9 +1769,9 @@ Text Label 2850 9400 0    60   ~ 0
 DP
 Text Label 2450 9400 2    60   ~ 0
 RD7
-Text GLabel 5750 2550 2    60   Input ~ 0
+Text GLabel 5750 2650 2    60   Input ~ 0
 GPI1
-Text GLabel 5800 2750 2    60   Input ~ 0
+Text GLabel 6050 2750 2    60   Input ~ 0
 CPZ
 Text GLabel 10250 5800 2    60   Input ~ 0
 INICIAR/PARAR
@@ -1937,7 +1927,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 3700 8100 3700
 Wire Wire Line
-	8100 3900 7050 3900
+	7050 3900 8100 3900
 Wire Wire Line
 	7050 3900 7050 4400
 $Comp
@@ -1970,4 +1960,11 @@ Wire Wire Line
 	7900 3550 8050 3550
 Connection ~ 8050 3550
 Connection ~ 7900 3900
+Wire Wire Line
+	5750 2650 5650 2650
+Wire Wire Line
+	5650 2550 6100 2550
+Wire Wire Line
+	5650 2450 5750 2450
+NoConn ~ 5650 2250
 $EndSCHEMATC
