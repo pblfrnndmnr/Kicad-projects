@@ -112,17 +112,6 @@ F 3 "" H 2050 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW1
-U 1 1 552A8EB5
-P 1650 2450
-F 0 "SW1" H 1800 2560 50  0000 C CNN
-F 1 "Reset" H 1650 2370 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_PUSH_SMALL" H 1650 2450 60  0001 C CNN
-F 3 "" H 1650 2450 60  0000 C CNN
-	1    1650 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L D_Small D4
 U 1 1 552A9031
 P 2900 2050
@@ -501,16 +490,10 @@ Connection ~ 2600 1400
 Wire Wire Line
 	2050 1750 2050 2250
 Wire Wire Line
-	1650 2050 2800 2050
-Wire Wire Line
 	2600 2050 2600 1900
 Connection ~ 2050 2050
 Wire Wire Line
 	2050 2550 2050 2850
-Wire Wire Line
-	1650 2150 1650 2050
-Wire Wire Line
-	1650 2750 2050 2750
 Connection ~ 2050 2750
 Connection ~ 2600 2050
 Wire Wire Line
@@ -1965,4 +1948,6 @@ F 3 "" H 9700 2850 60  0000 C CNN
 	1    9700 2850
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	2050 2050 2800 2050
 $EndSCHEMATC
