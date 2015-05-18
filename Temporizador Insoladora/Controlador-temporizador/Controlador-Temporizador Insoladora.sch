@@ -1950,4 +1950,8 @@ F 3 "" H 9700 2850 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	2050 2050 2800 2050
+Text Label 3350 3250 0    60   ~ 0
+Xtal+
+Text Label 3200 3350 0    60   ~ 0
+Xtal-
 $EndSCHEMATC
