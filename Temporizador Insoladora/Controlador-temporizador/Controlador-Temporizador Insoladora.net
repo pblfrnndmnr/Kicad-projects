@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "D:\\Fernando\\Electronica\\Kicad-projects\\Temporizador Insoladora\\Controlador-temporizador\\Controlador-Temporizador Insoladora.sch")
-    (date "18/05/2015 08:38:43 p.m.")
+    (source "D:/Fernando/Electronica/Kicad-projects/Temporizador Insoladora/Controlador-temporizador/Controlador-Temporizador Insoladora.sch")
+    (date "20/05/2015 04:50:03 p.m.")
     (tool "Eeschema (after 2015-mar-04 BZR unknown)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -167,14 +167,14 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 552AC82C))
     (comp (ref R23)
-      (value 10)
+      (value 39)
       (footprint Discret:R3)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 552ACB75))
     (comp (ref C13)
-      (value 39nF)
-      (footprint Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5)
+      (value 10nF)
+      (footprint Capacitors_ThroughHole:C_Rect_L7_W2.5_P5)
       (libsource (lib device) (part C))
       (sheetpath (names /) (tstamps /))
       (tstamp 552ACC4C))
@@ -191,7 +191,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 552AD09C))
     (comp (ref F1)
-      (value 1A)
+      (value 3A)
       (footprint Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_lateral_Type-II)
       (libsource (lib device) (part FUSE))
       (sheetpath (names /) (tstamps /))
@@ -479,6 +479,16 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 555AB148)))
   (libparts
+    (libpart (lib device) (part Crystal_Small)
+      (description "Two pin crystal")
+      (footprints
+        (fp Crystal_))
+      (fields
+        (field (name Reference) Y)
+        (field (name Value) Crystal_Small))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
     (libpart (lib device) (part CP)
       (description "Polarised capacitor")
       (footprints
@@ -508,23 +518,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part Crystal_Small)
-      (description "Two pin crystal")
-      (footprints
-        (fp Crystal_))
-      (fields
-        (field (name Reference) Y)
-        (field (name Value) Crystal_Small))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib device) (part FUSE)
-      (fields
-        (field (name Reference) F)
-        (field (name Value) FUSE))
-      (pins
-        (pin (num 1) (name ~) (type input))
-        (pin (num 2) (name ~) (type input))))
     (libpart (lib device) (part D_Small)
       (description Diode)
       (footprints
@@ -539,6 +532,13 @@
       (pins
         (pin (num 1) (name A) (type passive))
         (pin (num 2) (name C) (type passive))))
+    (libpart (lib device) (part FUSE)
+      (fields
+        (field (name Reference) F)
+        (field (name Value) FUSE))
+      (pins
+        (pin (num 1) (name ~) (type input))
+        (pin (num 2) (name ~) (type input))))
     (libpart (lib device) (part VR)
       (description VARISTANCE)
       (fields
@@ -618,22 +618,6 @@
         (pin (num 14) (name P14) (type passive))
         (pin (num 15) (name P15) (type passive))
         (pin (num 16) (name P16) (type passive))))
-    (libpart (lib conn) (part CONN_01X06)
-      (footprints
-        (fp Pin_Header_Straight_1X06)
-        (fp Pin_Header_Angled_1X06)
-        (fp Socket_Strip_Straight_1X06)
-        (fp Socket_Strip_Angled_1X06))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X06))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))
-        (pin (num 6) (name P6) (type passive))))
     (libpart (lib conn) (part CONN_01X03)
       (footprints
         (fp Pin_Header_Straight_1X03)
@@ -659,6 +643,22 @@
       (pins
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name P2) (type passive))))
+    (libpart (lib conn) (part CONN_01X06)
+      (footprints
+        (fp Pin_Header_Straight_1X06)
+        (fp Pin_Header_Angled_1X06)
+        (fp Socket_Strip_Straight_1X06)
+        (fp Socket_Strip_Angled_1X06))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X06))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))
+        (pin (num 6) (name P6) (type passive))))
     (libpart (lib regul) (part 7805)
       (aliases
         (alias LM7805)
@@ -1055,11 +1055,11 @@
     (net (code 85) (name "Net-(P8-Pad2)")
       (node (ref P8) (pin 2))
       (node (ref R15) (pin 2)))
-    (net (code 86) (name "Net-(F1-Pad2)")
+    (net (code 86) (name "Net-(P3-Pad2)")
       (node (ref P5) (pin 1))
-      (node (ref F1) (pin 2)))
-    (net (code 87) (name "Net-(P3-Pad2)")
-      (node (ref P5) (pin 3))
       (node (ref P4) (pin 2))
       (node (ref P3) (pin 2))
-      (node (ref VR1) (pin 2)))))
+      (node (ref VR1) (pin 2)))
+    (net (code 87) (name "Net-(F1-Pad2)")
+      (node (ref P5) (pin 3))
+      (node (ref F1) (pin 2)))))

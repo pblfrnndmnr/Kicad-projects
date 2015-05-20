@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 30/04/2015 01:53:42 p.m.
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 20/05/2015 02:22:52 p.m.
 
 BeginCmp
 TimeStamp = /552A98C3;
@@ -88,7 +88,7 @@ BeginCmp
 TimeStamp = /552ACC4C;
 Reference = C13;
 ValeurCmp = 39nF;
-IdModule  = Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5;
+IdModule  = Capacitors_ThroughHole:C_Rect_L7_W2.5_P5;
 EndCmp
 
 BeginCmp
@@ -130,6 +130,13 @@ BeginCmp
 TimeStamp = /552AA2A9;
 Reference = D5;
 ValeurCmp = D_Small;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /555AB148;
+Reference = D6;
+ValeurCmp = 1N4007;
 IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
 EndCmp
 
@@ -176,10 +183,31 @@ IdModule  = Connect:bornier3;
 EndCmp
 
 BeginCmp
+TimeStamp = /55427985;
+Reference = P6;
+ValeurCmp = OPTO;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
 TimeStamp = /552C0A8D;
 Reference = P7;
 ValeurCmp = CONN_02X08;
 IdModule  = Socket_Strips:Socket_Strip_Straight_2x08;
+EndCmp
+
+BeginCmp
+TimeStamp = /55443048;
+Reference = P8;
+ValeurCmp = OPTO;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /555AA8DF;
+Reference = P9;
+ValeurCmp = OPTO;
+IdModule  = Connect:bornier2;
 EndCmp
 
 BeginCmp
@@ -220,6 +248,13 @@ EndCmp
 BeginCmp
 TimeStamp = /552BDC51;
 Reference = Q6;
+ValeurCmp = BC548;
+IdModule  = Housings_TO-92:TO-92_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = /555AA8CF;
+Reference = Q7;
 ValeurCmp = BC548;
 IdModule  = Housings_TO-92:TO-92_Inline_Wide;
 EndCmp
@@ -428,10 +463,10 @@ IdModule  = Discret:R3;
 EndCmp
 
 BeginCmp
-TimeStamp = /552A8EB5;
-Reference = SW1;
-ValeurCmp = Reset;
-IdModule  = Buttons_Switches_ThroughHole:SW_PUSH_SMALL;
+TimeStamp = /555AA8C0;
+Reference = R30;
+ValeurCmp = 1K;
+IdModule  = Discret:R3;
 EndCmp
 
 BeginCmp
