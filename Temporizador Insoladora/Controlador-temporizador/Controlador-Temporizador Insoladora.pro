@@ -1,11 +1,9 @@
-update=26/04/2015 07:38:03 p.m.
+update=21/05/2015 11:31:03 a.m.
 version=1
 last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -61,3 +59,5 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=D:/Fernando/Electronica/Kicad-projects/Libreria-Kicad-Fernando/Libreria_Fernando/Kicad-Libreria-Fernando
+[general]
+version=1
