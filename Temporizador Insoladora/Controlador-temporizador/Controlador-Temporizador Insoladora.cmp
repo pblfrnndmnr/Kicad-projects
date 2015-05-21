@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 20/05/2015 02:22:52 p.m.
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 20/05/2015 07:22:18 p.m.
 
 BeginCmp
 TimeStamp = /552A98C3;
@@ -87,7 +87,7 @@ EndCmp
 BeginCmp
 TimeStamp = /552ACC4C;
 Reference = C13;
-ValeurCmp = 39nF;
+ValeurCmp = 10nF;
 IdModule  = Capacitors_ThroughHole:C_Rect_L7_W2.5_P5;
 EndCmp
 
@@ -143,7 +143,7 @@ EndCmp
 BeginCmp
 TimeStamp = /552AD2D4;
 Reference = F1;
-ValeurCmp = 1A;
+ValeurCmp = 3A;
 IdModule  = Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_lateral_Type-II;
 EndCmp
 
@@ -208,6 +208,13 @@ TimeStamp = /555AA8DF;
 Reference = P9;
 ValeurCmp = OPTO;
 IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /555D0F48;
+Reference = P10;
+ValeurCmp = CONN_01X08;
+IdModule  = Socket_Strips:Socket_Strip_Straight_1x08;
 EndCmp
 
 BeginCmp
@@ -353,7 +360,7 @@ EndCmp
 BeginCmp
 TimeStamp = /552B05EB;
 Reference = R14;
-ValeurCmp = R;
+ValeurCmp = 220;
 IdModule  = Discret:R3;
 EndCmp
 
@@ -416,7 +423,7 @@ EndCmp
 BeginCmp
 TimeStamp = /552ACB75;
 Reference = R23;
-ValeurCmp = 10;
+ValeurCmp = 39;
 IdModule  = Discret:R3;
 EndCmp
 
