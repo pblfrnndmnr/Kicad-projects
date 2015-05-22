@@ -404,7 +404,7 @@ Entry Wire Line
 Text Label 3400 4300 2    60   ~ 0
 A
 Text Label 5200 4200 2    60   ~ 0
-D
+C
 Text Label 5200 4100 2    60   ~ 0
 E
 Text Label 3300 3700 2    60   ~ 0
@@ -452,7 +452,6 @@ NoConn ~ 6500 2800
 NoConn ~ 4700 2800
 NoConn ~ 2900 2800
 NoConn ~ 5800 1800
-NoConn ~ 8450 900 
 Wire Wire Line
 	4150 4400 4000 4400
 Wire Wire Line
@@ -482,7 +481,7 @@ Entry Wire Line
 Text Label 5550 3500 3    60   ~ 0
 BUS-ANODOS
 Text Label 5200 3900 2    60   ~ 0
-C
+D
 Text Label 5200 4000 2    60   ~ 0
 DP
 Entry Wire Line
@@ -492,5 +491,17 @@ Entry Wire Line
 NoConn ~ 3500 3900
 NoConn ~ 3500 4000
 NoConn ~ 3500 4100
-NoConn ~ 3500 4200
+$Comp
+L GND #PWR03
+U 1 1 555F5789
+P 3400 4200
+F 0 "#PWR03" H 3400 3950 50  0001 C CNN
+F 1 "GND" H 3400 4050 50  0000 C CNN
+F 2 "" H 3400 4200 60  0000 C CNN
+F 3 "" H 3400 4200 60  0000 C CNN
+	1    3400 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 4200 3500 4200
 $EndSCHEMATC

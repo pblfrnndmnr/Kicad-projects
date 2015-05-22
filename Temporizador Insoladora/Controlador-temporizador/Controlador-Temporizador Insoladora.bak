@@ -682,7 +682,7 @@ U 1 1 552ACC4C
 P 12800 3150
 F 0 "C13" H 12825 3250 50  0000 L CNN
 F 1 "10nF" H 12825 3050 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 12838 3000 30  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L13_W4_P10" H 12838 3000 30  0001 C CNN
 F 3 "" H 12800 3150 60  0000 C CNN
 	1    12800 3150
 	1    0    0    -1  
@@ -793,7 +793,7 @@ F 1 "TRANSF" V 14500 2600 50  0000 C CNN
 F 2 "Connect:bornier2" H 14400 2600 60  0001 C CNN
 F 3 "" H 14400 2600 60  0000 C CNN
 	1    14400 2600
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X02 P3
@@ -833,7 +833,7 @@ U 1 1 552AEA1D
 P 13900 2400
 F 0 "VR1" V 13960 2354 50  0000 C TNN
 F 1 "S05K275" V 13900 2400 50  0000 C CNN
-F 2 "Discret:C2" H 13900 2400 60  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L13_W4_P10" H 13900 2400 60  0001 C CNN
 F 3 "" H 13900 2400 60  0000 C CNN
 	1    13900 2400
 	1    0    0    -1  
@@ -1830,9 +1830,9 @@ Wire Wire Line
 Wire Wire Line
 	4650 8650 6150 8650
 Text Label 5900 8950 0    60   ~ 0
-D
-Text Label 5900 8650 0    60   ~ 0
 C
+Text Label 5900 8650 0    60   ~ 0
+D
 Text Label 5900 8850 0    60   ~ 0
 E
 Text Label 5900 8750 0    60   ~ 0
@@ -1848,7 +1848,6 @@ Entry Wire Line
 NoConn ~ 4150 8650
 NoConn ~ 4150 8750
 NoConn ~ 4150 8850
-NoConn ~ 4150 8950
 Entry Wire Line
 	3600 8550 3700 8450
 Entry Wire Line
@@ -2119,4 +2118,17 @@ Wire Wire Line
 	9600 6950 8150 6950
 Wire Wire Line
 	8150 6950 8150 7200
+$Comp
+L GND #PWR042
+U 1 1 555F6435
+P 4050 8950
+F 0 "#PWR042" H 4050 8700 50  0001 C CNN
+F 1 "GND" H 4050 8800 50  0000 C CNN
+F 2 "" H 4050 8950 60  0000 C CNN
+F 3 "" H 4050 8950 60  0000 C CNN
+	1    4050 8950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 8950 4150 8950
 $EndSCHEMATC
