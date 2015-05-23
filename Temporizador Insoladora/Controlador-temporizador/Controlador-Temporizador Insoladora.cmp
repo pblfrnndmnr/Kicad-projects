@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 21/05/2015 03:35:06 p.m.
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 23/05/2015 02:07:46 p.m.
 
 BeginCmp
 TimeStamp = /552A98C3;
@@ -215,6 +215,13 @@ TimeStamp = /555D0F48;
 Reference = P10;
 ValeurCmp = CONN_01X08;
 IdModule  = Socket_Strips:Socket_Strip_Straight_1x08;
+EndCmp
+
+BeginCmp
+TimeStamp = /5560B911;
+Reference = P11;
+ValeurCmp = PuenteVDC;
+IdModule  = Socket_Strips:Socket_Strip_Straight_1x02;
 EndCmp
 
 BeginCmp
