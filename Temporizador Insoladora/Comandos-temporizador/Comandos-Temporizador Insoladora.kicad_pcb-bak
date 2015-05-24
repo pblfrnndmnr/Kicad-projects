@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 69.799999 39.215 130.860001 69.900001)
     (thickness 1.6)
-    (drawings 0)
+    (drawings 3)
     (tracks 176)
     (zones 0)
     (modules 9)
@@ -66,7 +66,7 @@
     (pad_drill 2.5)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFEFFFF)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -376,12 +376,12 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_2x08 (layer F.Cu) (tedit 555F56FC) (tstamp 555F5652)
+  (module Pin_Headers:Pin_Header_Straight_2x08 (layer F.Cu) (tedit 555FC57C) (tstamp 555F5652)
     (at 91.44 65.405 90)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /552C0A8D)
-    (fp_text reference P7 (at 0 -5.1 90) (layer F.SilkS)
+    (fp_text reference P7 (at -2.54 8.255 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN_02X08 (at 0 -3.1 90) (layer F.Fab)
@@ -446,6 +446,10 @@
     (pad 1 thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.5) (layers *.Cu)
       (net 13 GND) (zone_connect 2))
   )
+
+  (gr_line (start 92.075 67.945) (end 91.44 67.31) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 90.805 67.945) (end 92.075 67.945) (angle 90) (layer F.SilkS) (width 0.2))
+  (gr_line (start 91.44 67.31) (end 90.805 67.945) (angle 90) (layer F.SilkS) (width 0.2))
 
   (segment (start 106.68 65.405) (end 106.68 66.626314) (width 1) (layer B.Cu) (net 1))
   (segment (start 106.68 66.626314) (end 107.780574 67.726888) (width 1) (layer B.Cu) (net 1))
