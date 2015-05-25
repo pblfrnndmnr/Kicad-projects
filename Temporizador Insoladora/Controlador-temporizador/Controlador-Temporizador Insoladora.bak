@@ -1379,9 +1379,9 @@ Wire Wire Line
 Wire Bus Line
 	6050 3150 6050 4300
 Wire Bus Line
-	3550 4300 6050 4300
+	6050 4300 3550 4300
 Wire Bus Line
-	3550 3950 3550 4300
+	3550 4300 3550 3950
 Connection ~ 3650 5650
 Wire Wire Line
 	1100 5000 1100 5100
@@ -2129,4 +2129,25 @@ F 3 "" H 4050 8950 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4050 8950 4150 8950
+$Comp
+L CONN_01X02 P11
+U 1 1 5560B911
+P 5050 5100
+F 0 "P11" H 5050 5250 50  0000 C CNN
+F 1 "PuenteVDC" V 5150 5100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 5050 5100 60  0001 C CNN
+F 3 "" H 5050 5100 60  0000 C CNN
+	1    5050 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 5300 5250 5300
+Wire Wire Line
+	5250 5300 5250 5650
+Connection ~ 5250 5650
+Wire Wire Line
+	5000 5300 4850 5300
+Wire Wire Line
+	4850 5300 4850 5650
+Connection ~ 4850 5650
 $EndSCHEMATC

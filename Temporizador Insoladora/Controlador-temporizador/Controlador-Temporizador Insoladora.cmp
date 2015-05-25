@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 23/05/2015 02:07:46 p.m.
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 24/05/2015 08:55:24 p.m.
 
 BeginCmp
 TimeStamp = /552A98C3;
@@ -536,7 +536,7 @@ BeginCmp
 TimeStamp = /552AC82C;
 Reference = U4;
 ValeurCmp = TRIAC;
-IdModule  = Discret:TO220;
+IdModule  = Transistors_TO-220:TO-220_Neutral123_Horizontal_LargePads;
 EndCmp
 
 BeginCmp
