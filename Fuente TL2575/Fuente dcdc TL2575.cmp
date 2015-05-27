@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb 0.201504021001+5563~22~ubuntu14.04.1-product   date = sáb 04 abr 2015 10:04:29 ART
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 26/05/2015 06:30:38 p.m.
 
 BeginCmp
 TimeStamp = /551AED83;
@@ -36,10 +36,17 @@ IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
 EndCmp
 
 BeginCmp
-TimeStamp = /551F25D9;
+TimeStamp = /5564B16C;
 Reference = D2;
-ValeurCmp = D_Bridge_RS207;
-IdModule  = Modulos_Fernando:D_Bridge_RS207;
+ValeurCmp = D;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5564B2C0;
+Reference = D3;
+ValeurCmp = D;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
 EndCmp
 
 BeginCmp
@@ -78,17 +85,17 @@ IdModule  = Housings_DIP:DIP-16__300_ELL;
 EndCmp
 
 BeginCmp
-TimeStamp = /551AF1FF;
+TimeStamp = /5564AF0F;
 Reference = Vin1;
-ValeurCmp = CONN_01X02;
-IdModule  = Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads;
+ValeurCmp = CONN_01X03;
+IdModule  = Connect:bornier3;
 EndCmp
 
 BeginCmp
 TimeStamp = /551AF1CE;
 Reference = Vout1;
 ValeurCmp = CONN_01X02;
-IdModule  = Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads;
+IdModule  = Connect:bornier2;
 EndCmp
 
 EndListe
