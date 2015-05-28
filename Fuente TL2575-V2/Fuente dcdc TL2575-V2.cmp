@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 26/05/2015 06:30:38 p.m.
+
+BeginCmp
+TimeStamp = /551AED83;
+Reference = C1;
+ValeurCmp = 3300uF;
+IdModule  = Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AEDE2;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_ThroughHole:C_Disc_D3_P2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AED38;
+Reference = C3;
+ValeurCmp = 100uF;
+IdModule  = Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AEDA3;
+Reference = C4;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_ThroughHole:C_Disc_D3_P2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AE766;
+Reference = D1;
+ValeurCmp = D_Schottky;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5564B16C;
+Reference = D2;
+ValeurCmp = D;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /5564B2C0;
+Reference = D3;
+ValeurCmp = D;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AE8A6;
+Reference = L1;
+ValeurCmp = 220uH;
+IdModule  = Choke_Toroid_ThroughHole:Choke_Toroid_horizontal_Diameter14mm_Amidon-T50;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AF772;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AF7F2;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AF60F;
+Reference = RV1;
+ValeurCmp = POT;
+IdModule  = Potentiometers:Potentiometer_Bourns_3296W_3-8Zoll_Inline_ScrewUp;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AE710;
+Reference = U1;
+ValeurCmp = TL2575;
+IdModule  = Housings_DIP:DIP-16__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5564AF0F;
+Reference = Vin1;
+ValeurCmp = CONN_01X03;
+IdModule  = Connect:bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AF1CE;
+Reference = Vout1;
+ValeurCmp = CONN_01X02;
+IdModule  = Connect:bornier2;
+EndCmp
+
+EndListe
