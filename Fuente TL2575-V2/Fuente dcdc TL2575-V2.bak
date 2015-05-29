@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Kicad-Libreria-Fernando
-LIBS:Fuente dcdc TL2575-cache
+LIBS:Fuente dcdc TL2575-V2-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -231,17 +231,6 @@ F 3 "" H 8300 3950 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R1
-U 1 1 551AF772
-P 8300 3550
-F 0 "R1" V 8380 3550 50  0000 C CNN
-F 1 "R" V 8300 3550 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8230 3550 30  0001 C CNN
-F 3 "" H 8300 3550 30  0000 C CNN
-	1    8300 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R2
 U 1 1 551AF7F2
 P 8300 4350
@@ -364,4 +353,6 @@ Connection ~ 6700 3400
 Wire Wire Line
 	6700 4050 6700 4500
 Connection ~ 6700 4500
+Wire Wire Line
+	8300 3700 8300 3400
 $EndSCHEMATC

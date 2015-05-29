@@ -2,7 +2,7 @@
 
   (general
     (links 35)
-    (no_connects 1)
+    (no_connects 0)
     (area 85.28143 32.075 158.950046 77.69626)
     (thickness 1.6)
     (drawings 12)
@@ -780,13 +780,13 @@
     )
   )
 
-  (gr_text "DC-DC-1A-V2\nPFM\n" (at 129.54 40.64) (layer F.SilkS) (tstamp 55677C6C)
+  (gr_text "DC/DC-1A-V2-2015-PFM\n" (at 120.015 39.37) (layer F.SilkS) (tstamp 55677C6C)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text IN:5-40VAC (at 106.045 45.085) (layer F.SilkS) (tstamp 556654B8)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text OUT:1.50-30VDC (at 136.525 72.39) (layer F.SilkS)
+  (gr_text OUT:1.23-30VDC (at 136.525 72.39) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text - (at 151.13 67.945) (layer F.SilkS)
@@ -836,8 +836,8 @@
   (gr_line (start 153.67 74.93) (end 153.67 36.83) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 97.79 36.83) (end 97.79 74.93) (layer Edge.Cuts) (width 0.1))
 
-  (segment (start 127.635 55.88) (end 129.54 55.88) (width 1.5) (layer B.Cu) (net 4))
   (segment (start 120.65 55.88) (end 127.635 55.88) (width 1.5) (layer B.Cu) (net 4))
+  (segment (start 127.635 55.88) (end 129.54 55.88) (width 1.5) (layer B.Cu) (net 4))
   (segment (start 124.46 41.91) (end 124.46 43.18) (width 1.5) (layer B.Cu) (net 5))
   (segment (start 120.65 45.72) (end 124.46 45.72) (width 1.5) (layer B.Cu) (net 6))
   (segment (start 104.14 60.96) (end 104.14 64.77) (width 1.5) (layer B.Cu) (net 7))

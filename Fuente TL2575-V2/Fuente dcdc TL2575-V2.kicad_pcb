@@ -2,7 +2,7 @@
 
   (general
     (links 35)
-    (no_connects 1)
+    (no_connects 0)
     (area 85.28143 32.075 158.950046 77.69626)
     (thickness 1.6)
     (drawings 12)
@@ -118,56 +118,56 @@
     (add_net "Net-(RV1-Pad2)")
   )
 
-  (module Connect:1pin (layer F.Cu) (tedit 5565C8D1) (tstamp 55677895)
+  (module Connect:1pin (layer F.Cu) (tedit 556786D4) (tstamp 55677895)
     (at 140.97 44.45)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1pin (at 0 2.794) (layer F.Fab)
+    (fp_text value 1pin (at 0 2.794) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole circle (at 0 0) (size 2.99974 2.99974) (drill 0.7) (layers *.Cu *.Mask F.SilkS)
       (net 3 "Net-(C3-Pad1)"))
   )
 
-  (module Connect:1pin (layer F.Cu) (tedit 5565C8C6) (tstamp 55677887)
+  (module Connect:1pin (layer F.Cu) (tedit 556786D9) (tstamp 55677887)
     (at 142.24 43.18)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1pin (at 0 2.794) (layer F.Fab)
+    (fp_text value 1pin (at 0 2.794) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole circle (at 0 0) (size 2.99974 2.99974) (drill 0.7) (layers *.Cu *.Mask F.SilkS)
       (net 3 "Net-(C3-Pad1)"))
   )
 
-  (module Connect:1pin (layer F.Cu) (tedit 5565C8BB) (tstamp 5567789A)
+  (module Connect:1pin (layer F.Cu) (tedit 556786CF) (tstamp 5567789A)
     (at 139.7 45.72)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1pin (at 0 2.794) (layer F.Fab)
+    (fp_text value 1pin (at 0 2.794) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole circle (at 0 0) (size 2.99974 2.99974) (drill 0.7) (layers *.Cu *.Mask F.SilkS)
       (net 3 "Net-(C3-Pad1)"))
   )
 
-  (module Connect:1pin (layer F.Cu) (tedit 5565C8AF) (tstamp 5567789F)
+  (module Connect:1pin (layer F.Cu) (tedit 556786CB) (tstamp 5567789F)
     (at 138.43 46.99)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1pin (at 0 2.794) (layer F.Fab)
+    (fp_text value 1pin (at 0 2.794) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole circle (at 0 0) (size 2.99974 2.99974) (drill 0.7) (layers *.Cu *.Mask F.SilkS)
@@ -780,7 +780,7 @@
     )
   )
 
-  (gr_text "DC/DC-1A-V2\nPFM\n" (at 129.54 40.64) (layer F.SilkS) (tstamp 55677C6C)
+  (gr_text "DC/DC-1A-V2-2015-PFM\n" (at 120.015 39.37) (layer F.SilkS) (tstamp 55677C6C)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text IN:5-40VAC (at 106.045 45.085) (layer F.SilkS) (tstamp 556654B8)

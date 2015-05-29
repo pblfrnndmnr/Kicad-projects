@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "D:/Fernando/Electronica/Kicad-projects/Fuente TL2575-V2/Fuente dcdc TL2575-V2.sch")
-    (date "28/05/2015 05:07:07 p.m.")
+    (date "28/05/2015 06:19:10 p.m.")
     (tool "Eeschema (after 2015-mar-04 BZR unknown)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -58,7 +58,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 551AEDE2))
     (comp (ref Vout1)
-      (value CONN_01X02)
+      (value VOUT)
       (footprint Connect:bornier2)
       (libsource (lib conn) (part CONN_01X02))
       (sheetpath (names /) (tstamps /))
@@ -76,7 +76,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 551AF7F2))
     (comp (ref Vin1)
-      (value CONN_01X03)
+      (value VIN)
       (footprint Connect:bornier3)
       (libsource (lib conn) (part CONN_01X03))
       (sheetpath (names /) (tstamps /))
@@ -100,51 +100,13 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5565CBDE)))
   (libparts
-    (libpart (lib device) (part POT)
-      (description Potentionmetre)
+    (libpart (lib device) (part INDUCTOR)
       (fields
-        (field (name Reference) RV)
-        (field (name Value) POT))
+        (field (name Reference) L)
+        (field (name Value) INDUCTOR))
       (pins
         (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))))
-    (libpart (lib conn) (part CONN_01X03)
-      (footprints
-        (fp Pin_Header_Straight_1X03)
-        (fp Pin_Header_Angled_1X03)
-        (fp Socket_Strip_Straight_1X03)
-        (fp Socket_Strip_Angled_1X03))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X03))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))))
-    (libpart (lib conn) (part CONN_01X02)
-      (footprints
-        (fp Pin_Header_Straight_1X02)
-        (fp Pin_Header_Angled_1X02)
-        (fp Socket_Strip_Straight_1X02)
-        (fp Socket_Strip_Angled_1X02))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X02))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib device) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
+        (pin (num 2) (name 2) (type passive))))
     (libpart (lib device) (part CP)
       (description "Polarised capacitor")
       (footprints
@@ -202,13 +164,51 @@
       (pins
         (pin (num 1) (name A) (type passive))
         (pin (num 2) (name K) (type passive))))
-    (libpart (lib device) (part INDUCTOR)
+    (libpart (lib device) (part POT)
+      (description Potentionmetre)
       (fields
-        (field (name Reference) L)
-        (field (name Value) INDUCTOR))
+        (field (name Reference) RV)
+        (field (name Value) POT))
       (pins
         (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib conn) (part CONN_01X03)
+      (footprints
+        (fp Pin_Header_Straight_1X03)
+        (fp Pin_Header_Angled_1X03)
+        (fp Socket_Strip_Straight_1X03)
+        (fp Socket_Strip_Angled_1X03))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X03))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))))
+    (libpart (lib conn) (part CONN_01X02)
+      (footprints
+        (fp Pin_Header_Straight_1X02)
+        (fp Pin_Header_Angled_1X02)
+        (fp Socket_Strip_Straight_1X02)
+        (fp Socket_Strip_Angled_1X02))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
     (libpart (lib Kicad-Libreria-Fernando) (part TL2575)
       (description "1-A SIMPLE STEP-DOWN SWITCHING VOLTAGE REGULATORS -Housings_DIP:DIP-16__300_ELL")
       (docs http://www.ti.com/lit/gpn/tl2575-05)
@@ -235,10 +235,10 @@
         (pin (num 15) (name NC) (type NotConnected))
         (pin (num 16) (name VIN) (type power_out)))))
   (libraries
-    (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
+    (library (logical conn)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical Kicad-Libreria-Fernando)
       (uri D:\Fernando\Electronica\Kicad-projects\Libreria-Kicad-Fernando\Libreria_Fernando\Kicad-Libreria-Fernando.lib)))
   (nets
