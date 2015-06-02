@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 26/05/2015 06:30:38 p.m.
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 30/05/2015 12:12:38 p.m.
 
 BeginCmp
 TimeStamp = /551AED83;
@@ -24,6 +24,20 @@ EndCmp
 BeginCmp
 TimeStamp = /551AEDA3;
 Reference = C4;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_ThroughHole:C_Disc_D3_P2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5565CBDE;
+Reference = C5;
+ValeurCmp = 100uF;
+IdModule  = Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /55689F71;
+Reference = C6;
 ValeurCmp = 100nF;
 IdModule  = Capacitors_ThroughHole:C_Disc_D3_P2.5;
 EndCmp
@@ -57,13 +71,6 @@ IdModule  = Choke_Toroid_ThroughHole:Choke_Toroid_horizontal_Diameter14mm_Amidon
 EndCmp
 
 BeginCmp
-TimeStamp = /551AF772;
-Reference = R1;
-ValeurCmp = R;
-IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
-EndCmp
-
-BeginCmp
 TimeStamp = /551AF7F2;
 Reference = R2;
 ValeurCmp = R;
@@ -87,14 +94,14 @@ EndCmp
 BeginCmp
 TimeStamp = /5564AF0F;
 Reference = Vin1;
-ValeurCmp = CONN_01X03;
+ValeurCmp = VIN;
 IdModule  = Connect:bornier3;
 EndCmp
 
 BeginCmp
 TimeStamp = /551AF1CE;
 Reference = Vout1;
-ValeurCmp = CONN_01X02;
+ValeurCmp = VOUT;
 IdModule  = Connect:bornier2;
 EndCmp
 
