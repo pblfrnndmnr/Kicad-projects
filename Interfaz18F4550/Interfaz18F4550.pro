@@ -1,4 +1,4 @@
-update=22/07/2015 12:30:44 p.m.
+update=23/07/2015 08:59:12 p.m.
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -60,4 +58,5 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=D:/Fernando/Electronica/Kicad-projects/Libreria-Kicad-Fernando/Libreria_Fernando/Kicad-Libreria-Fernando
-LibName32=D:/Fernando/Electronica/Kicad-projects/Libreria-Kicad-Fernando/Libreria_Fernando/usb-b
+[general]
+version=1
